@@ -314,6 +314,9 @@ footer .fab{
   .banner .line{
     width: 75%;
   }
+  .intro{
+    height: auto;
+  }     
   .intro p{
     margin: 0px  auto 50px;
     width: 75%;
