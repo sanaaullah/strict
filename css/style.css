@@ -1,0 +1,450 @@
+/*===============
+    1.0 Global CSS
+    2.0 Typography
+    3.0 Header Section
+    4.0 Banner Section
+    5.0 Intro Section
+    6.0 Features Section
+    7.0 Portfolio Section
+    8.0 Contact Section
+    9.0 Footer Section
+================*/
+/* Global CSS Start*/
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f6f9f9;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+/* Global CSS End*/
+/* Typography Start*/
+  .container{
+    width: 1140px;
+    margin: 0 auto;
+
+  }
+/* Typography End*/
+/* Header Section Start*/
+  header .container{
+    padding: 20px 0;
+    min-height: 40px;
+  }
+  header img{
+    height: 30px;
+    margin-left: 20px;
+  }
+/* Header Section End*/
+/* Banner Section Start*/
+  .banner{
+    background: url(../img/banner.png) no-repeat;
+    background-size: 100% 100% ;
+    width: 100%;
+    float: left;
+  }
+  .banner .container{
+    text-align: center;
+  }
+  .banner *{
+    color: #ffffff;
+  }
+  .banner h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-top: 130px;
+  }
+  .line{
+    border: 1px solid #15a4fa;
+    margin: 10px auto 25px;
+    width: 35%;
+  }
+  .banner p{
+    font-size: 14px;
+  }
+  .banner button{
+    background-color: transparent;
+    border: 1px solid #15a4fa;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin: 30px 0 120px;
+  }
+  .banner button:hover{
+    background-color: #15a4fa;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+  .banner i{
+    font-weight: 10;
+    font-size: 15px;
+    margin-bottom: 60px;
+  }
+/* Banner Section End*/
+/* Intro Section Start*/
+.intro{
+  text-align: center;
+  width: 100%;
+  float: left;
+  height: 260px;
+}
+  .intro h1{
+    color: #2d3950;
+    font-size: 30px;
+    font-weight:normal;
+    margin: 50px 0px 20px;
+  }
+  .intro p{
+    color: #999999;
+    font-size: 14px;
+    margin: 0px  190px 80px;
+    line-height: 25px;
+  }
+/* Intro Section End*/
+/* Features Section Start*/
+.features{
+  background-color: #ffffff;
+  width: 100%;
+  float:left;
+  height: 260px;
+}
+.features img{
+  width: 80px;
+}
+.col{
+  width: 33.333%;
+  text-align: center;
+  margin: 50px 0px;
+  padding: 0px 50px;
+  float: left;
+}
+.col h1{
+  color: #576173;
+  font-size: 18px;
+  font-weight:bold;
+  margin: 20px 0px 15px;
+}
+.col p{
+  color: #a0a0a0;
+  font-size: 14px;
+}
+/* Features Section End*/
+/* Portfolio Section Start*/
+.portfolio{
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.portfolio h3{
+  color: #2d3950;
+  font-size: 30px;
+  font-weight:normal;
+  margin: 50px 0 15px;
+}
+.portfolio p{
+  color: #909090;
+  font-size: 14px;
+}
+.portfolio img{
+  width: 100%;
+}
+.portfolio .image{
+  width: 33.33%;
+  float: left;
+  padding: 0 10px 17px;
+  position: relative;
+}
+
+.portfolio .hoverimg{
+  width: 95%;
+  height: 92.7%;
+  background-color: #2bacfa;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
+  transform: scale(0);
+  display: none;
+}
+.hoverimg .fas{
+  max-width: 40px;
+  max-height: 40px;
+  padding: 10px;
+  color: #fff;
+  border:1px solid #fff;
+  border-radius: 4px;
+  margin: 30% 5px;
+  text-align: center;
+}
+.portfolio .image:hover .hoverimg{
+display: block;
+transition: ease 2s all;
+transform: scale(1);
+}
+.portfolio .profile{
+  margin-top: 50px;
+}
+/* Portfolio Section End*/
+/* Contact Section Start*/
+.contact{
+  width: 100%;
+  float:left;
+  text-align: center;
+  background: url(../img/form-bg.png) no-repeat;
+  background-size:100% ;
+}
+.contact h1{
+  color: #fff;
+  font-size: 30px;
+  margin: 40px 0 12px;
+  font-weight: 400;
+}
+.contact p{
+  color: #929294;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+#fname, #email, #textarea{
+  color: #767980;
+  font-size: 14px;
+  width: 45%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  background-color: transparent;
+}
+#textarea{
+  resize: none;
+  height: 130px;
+}
+#fname:focus, #email:focus, #textarea:focus{
+    background-color:#fff;
+  }
+input[type="checkbox"]{
+  display: none;
+  margin-right: -20px;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #99a0a9;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  padding: 1px;
+}
+input[type="checkbox"]:checked + label::before {
+    content: "\2713";
+    text-align: center;
+    font-weight: bold;
+    line-height: 1em;
+}
+.contact label{
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.contact #send{
+  background-color: transparent;
+  border: 1px solid #15a4fa;
+  padding: 12px 45px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-left: 220px;
+  color: #fff;
+  font-size: 16px;
+}
+.contact #send:hover{
+  background-color: #15a4fa;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.contact form{
+  margin-bottom: 100px;
+}
+/* Contact Section End*/
+/* Footer Section Start*/
+footer{
+  width: 100%;
+  float: left;
+}
+
+footer h4{
+  color: #999999;
+  float: left;
+  margin-top: 40px;
+}
+footer .icon{
+  float: right;
+  margin: 25px 0;
+}
+footer .fab{
+  min-width: 40px;
+  min-height: 40px;
+  padding: 10px;
+  background-color: #15a4fa;
+  text-align: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+/* Footer Section End*/
+
+/*RESPONSIVE SECTION*/
+/*FOR MOBILE DEVICES*/
+@media only screen and (max-width: 576px){
+  .container{
+    width: 100%;
+  }
+  .banner .line{
+    width: 75%;
+  }
+  .intro p{
+    margin: 0px  auto 80px;
+    width: 80%;
+    text-align: justify;
+  }
+  .features{
+  height: auto;
+  }
+  .features .col{
+    width: 100%;
+    margin: 25px 0px 25px;
+  }
+  .features .col p{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .features .col h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .portfolio .image{
+    width: 100%;
+  }
+  .portfolio .hoverimg{
+    width: 96.5%;
+    height: 96%;
+  }
+  .contact{
+    background-size:100% 100% ;
+  }
+  .contact form{
+    margin-bottom: 50px;
+  }
+  .contact #fname, #email, #textarea{
+    width: 90%;
+  }
+  .contact #send{
+    float: right;
+    padding: 12px 30px;
+    margin-bottom: 30px;
+    margin-right:5%;
+  }
+  input[type="checkbox"]+label{
+   margin-left: 5%;
+   float: left;
+  }
+  footer .icon{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+  }
+  footer h4{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+/*FOR TAB DEVICES*/
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+.container{
+  width: 100%;
+}
+.banner .line{
+  width: 60%;
+}
+.intro p{
+  margin: 0px  auto 80px;
+  width: 80%;
+  text-align: justify;
+}
+.features{
+height: auto;
+}
+.features .col{
+  width: 100%;
+  margin: 25px 0px 25px;
+}
+.features .col p{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.features .col h1{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.portfolio .image{
+  width: 50%;
+}
+.portfolio .hoverimg{
+  width: 95%;
+  height: 93%;
+}
+.contact{
+  background-size:100% 100% ;
+}
+.contact form{
+  margin-bottom: 50px;
+}
+.contact #fname, #email, #textarea{
+  width: 90%;
+}
+.contact #send{
+  float: right;
+  padding: 12px 30px;
+  margin-bottom: 30px;
+  margin-right:5%;
+}
+input[type="checkbox"]+label{
+ margin-left: 5%;
+ float: left;
+}
+footer .icon{
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+footer h4{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+}
